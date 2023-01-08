@@ -7,4 +7,19 @@
     <RootNamespace>TP_Blazor</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Blazorise.Icons.FontAwesome" />
+    <None Remove="Models\" />
+    <None Remove="Blazorise.DataGrid" />
+    <None Remove="Blazorise.Bootstrap" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.1.5" />
+    <PackageReference Include="Blazorise.DataGrid" Version="1.1.5" />
+    <PackageReference Include="Blazorise.Bootstrap" Version="1.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

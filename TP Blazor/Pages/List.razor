@@ -1,0 +1,27 @@
+﻿@page "/list"
+@using TP_Blazor.Models
+<h3>Liste</h3>
+
+@*@if (items!=null)    {        <table class="table">            <thead>                <tr>
+                    <th>Id</th>
+                    <th>Display Name</th>
+                    <th>Stack Size</th>
+                    <th>Maximum Durability</th>
+                    <th>Enchant Categories</th>
+                    <th>Repair With</th>
+                    <th>Created Date</th>
+                </tr>            </thead>            <tbody>
+                @foreach (var item in items)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.DisplayName</td>
+                        <td>@item.StackSize</td>
+                        <td>@item.MaxDurability</td>
+                        <td>@(string.Join(", ", item.EnchantCategories))</td>
+                        <td>@(string.Join(", ", item.RepairWith))</td>
+                        <td>@item.CreatedDate.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>        </table>    }*@<DataGrid TItem="Item" Data="@items" PageSize="int.MaxValue" Responsive>
+</DataGrid>

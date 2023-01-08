@@ -1,0 +1,227 @@
+﻿[
+    {
+        "id": 1,
+        "displayname": "Zytrac",
+        "name": "zytrac",
+        "stacksize": 50,
+        "maxdurability": 33,
+        "enchantcategories": [
+            "breakable",
+            "digger"
+        ],
+        "repairwith": [
+            "warped_planks",
+            "dark_oak_planks"
+        ],
+        "createddate": "2018-10-31",
+        "updateddate": "2014-11-11"
+    },
+    {
+        "id": 2,
+        "displayname": "Printspan",
+        "name": "printspan",
+        "stacksize": 26,
+        "maxdurability": 63,
+        "enchantcategories": [
+            "weapon"
+        ],
+        "repairwith": [
+            "jungle_planks",
+            "jungle_planks"
+        ],
+        "createddate": "2015-11-23",
+        "updateddate": "2022-09-15"
+    },
+    {
+        "id": 3,
+        "displayname": "Vitricomp",
+        "name": "vitricomp",
+        "stacksize": 62,
+        "maxdurability": 79,
+        "enchantcategories": [
+            "armor_chest",
+            "breakable"
+        ],
+        "repairwith": [
+            "warped_planks"
+        ],
+        "createddate": "2022-08-11",
+        "updateddate": null
+    },
+    {
+        "id": 4,
+        "displayname": "Turnabout",
+        "name": "turnabout",
+        "stacksize": 36,
+        "maxdurability": 105,
+        "enchantcategories": [],
+        "repairwith": [
+            "crimson_planks"
+        ],
+        "createddate": "2021-05-04",
+        "updateddate": null
+    },
+    {
+        "id": 5,
+        "displayname": "Medesign",
+        "name": "medesign",
+        "stacksize": 13,
+        "maxdurability": 95,
+        "enchantcategories": [],
+        "repairwith": [
+            "dark_oak_planks",
+            "birch_planks"
+        ],
+        "createddate": "2018-01-27",
+        "updateddate": null
+    },
+    {
+        "id": 6,
+        "displayname": "Micronaut",
+        "name": "micronaut",
+        "stacksize": 29,
+        "maxdurability": 59,
+        "enchantcategories": [
+            "armor_head",
+            "armor_head"
+        ],
+        "repairwith": [
+            "spruce_planks"
+        ],
+        "createddate": "2022-04-15",
+        "updateddate": "2019-07-05"
+    },
+    {
+        "id": 7,
+        "displayname": "Webiotic",
+        "name": "webiotic",
+        "stacksize": 4,
+        "maxdurability": 96,
+        "enchantcategories": [
+            "armor_chest",
+            "vanishable"
+        ],
+        "repairwith": [
+            "warped_planks",
+            "crimson_planks"
+        ],
+        "createddate": "2021-05-12",
+        "updateddate": null
+    },
+    {
+        "id": 8,
+        "displayname": "Opticall",
+        "name": "opticall",
+        "stacksize": 37,
+        "maxdurability": 121,
+        "enchantcategories": [
+            "weapon",
+            "digger"
+        ],
+        "repairwith": [],
+        "createddate": "2020-04-29",
+        "updateddate": null
+    },
+    {
+        "id": 9,
+        "displayname": "Scenty",
+        "name": "scenty",
+        "stacksize": 19,
+        "maxdurability": 101,
+        "enchantcategories": [
+            "weapon",
+            "digger",
+            "armor"
+        ],
+        "repairwith": [],
+        "createddate": "2017-08-03",
+        "updateddate": "2017-01-26"
+    },
+    {
+        "id": 10,
+        "displayname": "Enquility",
+        "name": "enquility",
+        "stacksize": 57,
+        "maxdurability": 54,
+        "enchantcategories": [
+            "armor_head",
+            "digger"
+        ],
+        "repairwith": [],
+        "createddate": "2020-12-16",
+        "updateddate": null
+    },
+    {
+        "id": 11,
+        "displayname": "Zytrex",
+        "name": "zytrex",
+        "stacksize": 53,
+        "maxdurability": 99,
+        "enchantcategories": [
+            "weapon",
+            "weapon",
+            "armor_chest"
+        ],
+        "repairwith": [
+            "oak_planks"
+        ],
+        "createddate": "2014-08-12",
+        "updateddate": null
+    },
+    {
+        "id": 12,
+        "displayname": "Kyaguru",
+        "name": "kyaguru",
+        "stacksize": 25,
+        "maxdurability": 123,
+        "enchantcategories": [],
+        "repairwith": [
+            "dark_oak_planks",
+            "dark_oak_planks"
+        ],
+        "createddate": "2022-09-25",
+        "updateddate": null
+    },
+    {
+        "id": 13,
+        "displayname": "Digirang",
+        "name": "digirang",
+        "stacksize": 35,
+        "maxdurability": 119,
+        "enchantcategories": [
+            "vanishable",
+            "breakable"
+        ],
+        "repairwith": [],
+        "createddate": "2022-03-24",
+        "updateddate": null
+    },
+    {
+        "id": 14,
+        "displayname": "Marqet",
+        "name": "marqet",
+        "stacksize": 11,
+        "maxdurability": 40,
+        "enchantcategories": [
+            "breakable",
+            "weapon"
+        ],
+        "repairwith": [],
+        "createddate": "2018-12-14",
+        "updateddate": "2022-03-07"
+    },
+    {
+        "id": 15,
+        "displayname": "Helixo",
+        "name": "helixo",
+        "stacksize": 41,
+        "maxdurability": 57,
+        "enchantcategories": [],
+        "repairwith": [
+            "dark_oak_planks",
+            "oak_planks"
+        ],
+        "createddate": "2018-10-21",
+        "updateddate": null
+    }
+]
