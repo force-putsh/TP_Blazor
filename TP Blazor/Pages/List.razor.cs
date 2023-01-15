@@ -8,6 +8,7 @@ using Blazored.Modal;
 using Blazored.Modal.Services;
 using TP_Blazor.Modals;
 using TP_Blazor.Services;
+using Microsoft.Extensions.Localization;
 
 namespace TP_Blazor.Pages;
 
@@ -20,6 +21,8 @@ public partial class List
     private List<Item> items;
     private int totalItem;
 
+    [Inject]
+    public IStringLocalizer<List> Localizer { get; set; }
     [Inject]
     public HttpClient HttpClient { get; set; }
     
@@ -37,6 +40,8 @@ public partial class List
 
     [Inject]
     public ILocalStorageService LocalStorage { get; set; }
+
+    
 
     private async Task OnReadData(DataGridReadDataEventArgs<Item> e)
     {

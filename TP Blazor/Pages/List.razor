@@ -1,6 +1,6 @@
 ﻿@page "/list"
 @using TP_Blazor.Models
-<h3>Liste</h3>
+<h3>@Localizer["Title"]</h3>
 
 @*@if (items!=null)
     {
@@ -36,7 +36,7 @@
 
 <div>
     <NavLink class="btn btn-primary" href="add" Match="NavLinkMatch.All">
-        <i class="fa fa-plus"></i> Ajouter
+        <i class="fa fa-plus"></i> @Localizer["btnTitle"]
     </NavLink>
 </div>
 
