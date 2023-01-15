@@ -2,7 +2,11 @@
 @using TP_Blazor.Models
 <h3>Liste</h3>
 
-@*@if (items!=null)    {        <table class="table">            <thead>                <tr>
+@*@if (items!=null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
                     <th>Id</th>
                     <th>Display Name</th>
                     <th>Stack Size</th>
@@ -10,7 +14,9 @@
                     <th>Enchant Categories</th>
                     <th>Repair With</th>
                     <th>Created Date</th>
-                </tr>            </thead>            <tbody>
+                </tr>
+            </thead>
+            <tbody>
                 @foreach (var item in items)
                 {
                     <tr>
@@ -23,8 +29,24 @@
                         <td>@item.CreatedDate.ToShortDateString()</td>
                     </tr>
                 }
-            </tbody>        </table>    }*@<DataGrid TItem="Item" Data="@items" ReadData="@OnReadData" TotalItems="@totalItem" ShowPager  PageSize="10" Responsive >
+            </tbody>
+        </table>
+
+    }*@
+
+<div>
+    <NavLink class="btn btn-primary" href="add" Match="NavLinkMatch.All">
+        <i class="fa fa-plus"></i> Ajouter
+    </NavLink>
+</div>
+
+<DataGrid TItem="Item" Data="@items" ReadData="@OnReadData" TotalItems="@totalItem" ShowPager PageSize="10" Responsive>
     <DataGridColumn TItem="Item" Field="@nameof(Item.Id)" Caption="#" />
+    <DataGridColumn TItem="Item" Field="@nameof(Item.Id)" Caption="Image">
+        <DisplayTemplate>
+            <img src="images/@(context.Name).png" class="img-thumbnail" title="@context.DisplayName" alt="@context.DisplayName" style="max-width: 150px" />
+        </DisplayTemplate>
+    </DataGridColumn>
     <DataGridColumn TItem="Item" Field="@nameof(Item.DisplayName)" Caption="Display name" />
     <DataGridColumn TItem="Item" Field="@nameof(Item.StackSize)" Caption="Stack size" />
     <DataGridColumn TItem="Item" Field="@nameof(Item.MaxDurability)" Caption="Maximum durability" />
@@ -39,4 +61,10 @@
         </DisplayTemplate>
     </DataGridColumn>
     <DataGridColumn TItem="Item" Field="@nameof(Item.CreatedDate)" Caption="Created date" DisplayFormat="{0:d}" DisplayFormatProvider="@System.Globalization.CultureInfo.GetCultureInfo("fr-FR")" />
+    <DataGridColumn TItem="Item" Field="@nameof(Item.Id)" Caption="Action">
+            <DisplayTemplate>
+                <a href="Edit/@(context.Id)" class="btn btn-primary"><i class="fa fa-edit"></i> Editer</a>
+            <button type="button" class="btn btn-primary" @onclick="() => OnDelete(context.Id)"><i class="fa fa-trash"></i> Supprimer</button>
+            </DisplayTemplate>
+        </DataGridColumn>
 </DataGrid>
