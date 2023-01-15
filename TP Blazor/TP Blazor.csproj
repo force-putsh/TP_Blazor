@@ -30,19 +30,12 @@
     <Folder Include="Ressources\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ressources\Pages.List.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Pages.List.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Update="Ressources\Pages.List.fr-FR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Pages.List.fr-FR.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Ressources\Pages.List.Designer.cs">
-      <DependentUpon>Pages.List.resx</DependentUpon>
-    </Compile>
     <Compile Update="Ressources\Pages.List.fr-FR.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
