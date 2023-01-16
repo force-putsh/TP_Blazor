@@ -44,7 +44,7 @@
     <DataGridColumn TItem="Item" Field="@nameof(Item.Id)" Caption="#" />
     <DataGridColumn TItem="Item" Field="@nameof(Item.Id)" Caption="Image">
         <DisplayTemplate>
-            <img src="images/@(context.Name).png" class="img-thumbnail" title="@context.DisplayName" alt="@context.DisplayName" style="max-width: 150px" />
+            <img src="images/default.png" class="img-thumbnail" title="@context.DisplayName" alt="@context.DisplayName" style="max-width: 150px" />
         </DisplayTemplate>
     </DataGridColumn>
     <DataGridColumn TItem="Item" Field="@nameof(Item.DisplayName)" Caption="Display name" />

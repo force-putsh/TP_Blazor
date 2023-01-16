@@ -25,7 +25,7 @@ builder.Services.AddBlazorise()
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddBlazoredModal();
 builder.Services.AddControllers();
-builder.Services.AddLocalization(opt=>{opt.ResourcesPath="Resources";});
+builder.Services.AddLocalization(opt=>{opt.ResourcesPath= "Resources"; });
 builder.Services.Configure<RequestLocalizationOptions>(option =>
 {
     option.DefaultRequestCulture = new RequestCulture(new CultureInfo("en-US"));
