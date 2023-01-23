@@ -1,9 +1,28 @@
 ﻿@page "/"
+@using System.Globalization
+@using TP_Blazor.Components
 
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
+<p>
+    <b>CurrentCulture</b>: @CultureInfo.CurrentCulture
+</p>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<Card>
+    <CardHeader>
+        <div class="card-header">
+            My templated Component Header
+        </div>
+    </CardHeader>
+    <CardBody>
+        <div class="card-body">
+            <h4>Template Component Body</h4>
+        </div>
+    </CardBody>
+    <CardFooter>
+        <div class="card-footer">
+            template component Footer
+        </div>
+    </CardFooter>
+</Card>
