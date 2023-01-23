@@ -21,19 +21,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddHttpClient();
 builder.Services.AddBlazorise()
     .AddBootstrapProviders()
-    .AddBlazoredLocalStorage()
     .AddFontAwesomeIcons();
-builder.Services.AddBlazoredLocalStorage();
-builder.Services.AddBlazoredModal();
-builder.Services.AddControllers();
-builder.Services.AddLocalization(opt=>{opt.ResourcesPath="Ressources";});
-builder.Services.Configure<RequestLocalizationOptions>(option =>
-{
-    option.DefaultRequestCulture = new RequestCulture(new CultureInfo("en-US"));
-    option.SupportedCultures = new List<CultureInfo> { new CultureInfo("en-US"), new CultureInfo("fr-FR") };
-    option.SupportedUICultures = new List<CultureInfo> { new CultureInfo("en-US"), new CultureInfo("fr-FR") };
-});
-builder.Services.AddScoped<IDataService, DataLocalService>();
 
 var app = builder.Build();
 
@@ -47,18 +35,6 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-
-var options =((IApplicationBuilder)app).ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
-
-if (options?.Value != null)
-{
-    app.UseRequestLocalization(options.Value);
-}
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
