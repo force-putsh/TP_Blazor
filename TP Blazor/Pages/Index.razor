@@ -1,9 +1,32 @@
 ﻿@page "/"
+@using System.Globalization
+@using TP_Blazor.Components
 
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
+<p>
+    <b>CurrentCulture</b>: @CultureInfo.CurrentCulture
+</p>
 
-Welcome to your new app.
+<Card Item="CakeItem">
+    <CardHeader>
+        <div class="card-header">
+            Cake Token number - @context.Id
+        </div>
+    </CardHeader>
+    <CardBody>
+        <div class="card-body">
+            <div>@context.Name</div>
+            <div>$@context.Cost</div>
+        </div>
+    </CardBody>
+    <CardFooter>
+        <div class="card-footer text-muted">
+            this is footer
+        </div>
+    </CardFooter>
+</Card>
+
 
 <SurveyPrompt Title="How is Blazor working for you?" />
